@@ -27,6 +27,18 @@ See data.csv file above for an example of the required format
 See example.ipynb for an example estimate
 
 
+## Notes
+The model was built from publicly available data from these sources:
+
+* https://data.gov.il/dataset/covid-19
+
+* https://datadashboard.health.gov.il/COVID-19/
+
+* https://www.gov.il/he/departments/publications/?OfficeId=4153ab18-52bb-42dc-a347-b513faa428ca&limit=10&skip=0
+
+We did not have full data, so model is built as our best estimate from public information.
+
+
 ## Results up to 27/7/2020:
 
 ![](/new_crit_pred.jpg?raw=true "New Critical prediction")
