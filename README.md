@@ -16,8 +16,8 @@ The model returns the total estimated critical patients next week (+6 days from 
 
 ```
 predict_critical_cases(new_daily_critical_history,
-                            cases_20_59_history, cases_60_74_history, cases_75_plus_history,
-                            total_critical_today)
+                       cases_20_59_history, cases_60_74_history, cases_75_plus_history,
+                       total_critical_today)
 ```
                             
 
@@ -29,11 +29,11 @@ See [here](example.ipynb) for an example estimate
 ## Notes
 The model was built from publicly available data from these sources:
 
-* https://data.gov.il/dataset/covid-19
+* [MOH open data](https://data.gov.il/dataset/covid-19)
 
-* https://datadashboard.health.gov.il/COVID-19/
+* [MOH dashboard](https://datadashboard.health.gov.il/COVID-19/)
 
-* https://www.gov.il/he/departments/publications/?OfficeId=4153ab18-52bb-42dc-a347-b513faa428ca&limit=10&skip=0
+* ["Merkaz Hameida" daily pdf briefings](https://www.gov.il/he/departments/publications/?OfficeId=4153ab18-52bb-42dc-a347-b513faa428ca&limit=10&skip=0)
 
 We did not have full data, so model is built as our best estimate from the publicly available information (e.g. non-integer cases are a result of using percentages from "Merkaz Hameida pdfs").
 
