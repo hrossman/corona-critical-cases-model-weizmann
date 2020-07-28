@@ -4,7 +4,7 @@ Estimate total critical patients next week (+6 days from today)
 
 Data required:
 1. New daily critical patients, 50 days history from today
-2. COVID19 infection cases from 7 days ago, subgorubed to 3 age groups: [20-59], [60-74]. 75+
+2. COVID-19 infection cases from 7 days ago, subgrouped to 3 age groups: [20-59], [60-74]. 75+
 3. Total hospitalized critical patients today
 
 The model returns the total estimated critical patients next week (+6 days from today)    
