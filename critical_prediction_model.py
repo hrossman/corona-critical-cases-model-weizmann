@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 
+# Empirical multiplier for change in critical cases definitions starting at July 6th
+JULY_MULTIPLIER = 1.35
+
 
 def _shift_date(df, days):
     # shift date index by 'days'
@@ -41,7 +44,7 @@ def predict_critical_cases(new_daily_critical_history,
     # predict critical patients from age-structure of cases 6 days forward
     new_daily_critical_pred = 0.008 * df_pred['cases_20-59'] + 0.07 * df_pred['cases_60-74'] + 0.27 * df_pred['cases_75+']
     # Apply empirical multiplier for change in critical cases definitions starting at July 6th
-    new_daily_critical_pred.loc[pd.to_datetime('2020-7-6'):] *= 1.4
+    new_daily_critical_pred.loc[pd.to_datetime('2020-7-6'):] *= JULY_MULTIPLIER 
     # shift prediction 6 days forward
     df_pred = df_pred.join(_shift_date(new_daily_critical_pred, days=6).rename('new_daily_critical_pred'), how='outer')
 
