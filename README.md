@@ -12,7 +12,7 @@ The model returns the total estimated critical patients next week (+6 days from 
 ## To Run:
 1. Load data
 
-2. run the function (from critical_prediction_model.py):
+2. Run the function (from critical_prediction_model.py):
 
 ```
 predict_critical_cases(new_daily_critical_history,
