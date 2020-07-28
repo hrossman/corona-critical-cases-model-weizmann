@@ -8,7 +8,16 @@ Data required:
 3. Total hospitalized critical patients today
 
 The model returns the total estimated critical patients next week (+6 days from today)    
-       
+
+Model is the function:
+
+```
+predict_critical_cases(new_daily_critical_history,
+                            cases_20_59_history, cases_60_74_history, cases_75_plus_history,
+                            total_critical_today)
+```
+                            
+in critical_prediction_model.py
 See data file for an example of the required format
 
 See exmample.ipynb for an example estimate
