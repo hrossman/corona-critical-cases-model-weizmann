@@ -21,7 +21,6 @@ predict_critical_cases(new_daily_critical_history,
 ```
                             
 
-
 See data.csv file above for an example of the required format
 
 See [here](example.ipynb) for an example estimate
@@ -36,7 +35,7 @@ The model was built from publicly available data from these sources:
 
 * https://www.gov.il/he/departments/publications/?OfficeId=4153ab18-52bb-42dc-a347-b513faa428ca&limit=10&skip=0
 
-We did not have full data, so model is built as our best estimate from the publicly available information.
+We did not have full data, so model is built as our best estimate from the publicly available information (e.g. non-integer cases are a result of using percentages from "Merkaz Hameida pdfs").
 
 
 ## Results up to 27/7/2020:
