@@ -18,9 +18,10 @@ predict_critical_cases(new_daily_critical_history,
 ```
                             
 in critical_prediction_model.py
-See data file for an example of the required format
 
-See exmample.ipynb for an example estimate
+See data.csv file above for an example of the required format
+
+See example.ipynb for an example estimate
 
 
 ## Results up to 27/7/2020:
