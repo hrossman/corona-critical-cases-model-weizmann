@@ -13,7 +13,10 @@ def _shift_date(df, days):
 def _critical_released_estimate(x):
     # estimate released\deceased each day depending on critical patients additions in last 50 days (weighted by pdf)
     # "released\deceased" pdf was estimated by analyzing times reported in the MOH patients deceased open data
-    x = x[::-1].values
+    if isinstance(x, pd.core.series.Series):
+        x = x[::-1].values
+    else:
+        x = x[::-1]
     p = np.arange(len(x))+1
     p = pd.Series(2 / (1 + np.exp(-0.125*p)) - 1)
     p = p-p.shift(1).fillna(0)
